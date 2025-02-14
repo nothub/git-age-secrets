@@ -19,7 +19,7 @@ Add this filter to your `~/.config/git/config`:
 
 Apply the filter in your projects `.gitattributes`:
 
-```
+```ini
 /secret.yaml filter=age
 /secrets/**  filter=age	
 ```
