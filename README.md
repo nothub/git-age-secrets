@@ -2,14 +2,13 @@
 
 An example setup for handling secret-encryption in git with age.
 
-~/.gitconfig
+`~/.config/git/config`
+
 ```ini
 ...
-
 [filter "age"]
-    clean = age -R ~/.ssh/id_ed25519.pub -a -
-    smudge = age -d -i ~/.ssh/id_ed25519 -
-    required = true
-
+	clean = age -R ~/.ssh/id_ed25519.pub -a -
+	smudge = age -d -i ~/.ssh/id_ed25519 -
+	required = true
 ...
 ```
